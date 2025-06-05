@@ -1,0 +1,89 @@
+/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/mysql2/promise.js:359
+    const localErr = new Error();
+                     ^
+
+Error: Can't create more than max_prepared_stmt_count statements (current value: 16382)
+    at PromisePool.execute (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/mysql2/promise.js:359:22)
+    at totalJoin (file:///home/qlqgbxef/aladinkachirag.pro/src/controllers/adminController.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ER_MAX_PREPARED_STMT_COUNT_REACHED',
+  errno: 1461,
+  sql: "SELECT * FROM wingo WHERE status != 0 AND game = 'wingo' ORDER BY id DESC LIMIT 10 ",
+  sqlState: '42000',
+  sqlMessage: "Can't create more than max_prepared_stmt_count statements (current value: 16382)"
+}
+
+Node.js v22.14.0
+/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/mysql2/promise.js:359
+    const localErr = new Error();
+                     ^
+
+Error: Can't create more than max_prepared_stmt_count statements (current value: 16382)
+    at PromisePool.execute (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/mysql2/promise.js:359:22)
+    at middlewareAdminController (file:///home/qlqgbxef/aladinkachirag.pro/src/controllers/adminController.js:108:35)
+    at Layer.handle [as handle_request] (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express/lib/router/index.js:175:3) {
+  code: 'ER_MAX_PREPARED_STMT_COUNT_REACHED',
+  errno: 1461,
+  sql: 'SELECT `token`,`level`, `status` FROM `users` WHERE `token` = ? AND veri = 1',
+  sqlState: '42000',
+  sqlMessage: "Can't create more than max_prepared_stmt_count statements (current value: 16382)"
+}
+
+Node.js v22.14.0
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:159:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader] (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:370:22)
+    at Object.keyGenerator (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:643:20)
+    at file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:696:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:676:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:159:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader] (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:370:22)
+    at Object.keyGenerator (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:643:20)
+    at file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:696:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:676:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:159:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader] (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:370:22)
+    at Object.keyGenerator (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:643:20)
+    at file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:696:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:676:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:159:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader] (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:370:22)
+    at Object.keyGenerator (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:643:20)
+    at file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:696:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:676:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:159:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader] (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:370:22)
+    at Object.keyGenerator (file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:643:20)
+    at file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:696:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/qlqgbxef/nodevenv/aladinkachirag.pro/22/lib/node_modules/express-rate-limit/dist/index.mjs:676:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
